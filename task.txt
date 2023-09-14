@@ -1,0 +1,67 @@
+Name=input("Enter your Name: ")
+Register_no=input("Register_No: ")
+Course=input("Enter your course: ")
+Tam=int(input("Enter your Tam Marks: "));
+Eng=int(input("Enter your Eng Marks: "));
+Mat=int(input("Enter your Mat Marks: "));
+Sst=int(input("Enter your Sst Marks: "));
+Cs=int(input("Enter your Cs Marks: "));
+Bio=int(input("Enter your Bio Marks: "));
+Tot=(Tam+Eng+Mat+Sst+Cs+Bio);
+Average=Tot/6;
+print("Total mark is:",Tot,"\nAverage mark is:",Average)
+Max_Marks=100;
+if(Tam>Eng and Tam>Mat and Tam>Sst and Tam>Cs and Tam>Bio):
+    Max_Marks=Tam;
+elif(Eng>Mat and Eng>Sst and Eng>Cs and Eng>Bio):
+    Max_Marks=Eng;
+elif(Mat>Sst and Mat>Cs and Mat>Bio):
+    Max_Marks=Mat;
+elif(Sst>Cs and Sst>Cs and Sst>Bio):
+    Max_Marks=Sst;
+elif(Cs>Bio):
+    Max_Marks=Cs;
+else:
+    Max_Marks=Bio;
+print ("Maximum Mark is: ",Max_Marks );
+Min_Marks=40;
+if(Tam<Eng and Tam<Mat and Tam<Sst and Tam<Cs and Tam<Bio):
+    Min_Marks=Tam;
+elif(Eng<Mat and Eng<Sst and Eng<Cs and Eng<Bio):
+    Min_Marks=Eng;
+elif(Mat<Sst and Mat<Cs and Mat<Bio):
+    Min_Marks=Mat;
+elif(Sst<Cs and Sst<Cs and Sst<Bio):
+    Min_Marks=Sst;
+elif(Cs<Bio):
+    Min_Marks=Cs;
+else:
+    Min_Marks=Bio;
+print ("Minimum Mark is: ",Min_Marks);
+if(Average>=90 and Average<=100):
+    print("Your grade is A")
+elif(Average>=70 and Average<=80):
+    print("Your grade is B")
+elif(Average>=50 and Average<=60):
+    print("Your grade is C")
+elif(Average>=30 and Average<=40):
+    print("Your grade is D")
+else:
+    print("Your grade is E")
+if(Tam>=40 and Eng>=40 and Mat>=40 and Sst>=40 and Cs>=40 and Bio>=40):
+    print("\tCongrats you got a Pass mark")
+else:
+    print("Alas! you are Fail")
+if(Tam>=40 and Eng>=40 and Mat>=40 and Sst>=40 and Cs>=40 and Bio>=40):    
+    print("\n\n\t\t\t**THANK YOU**")
+else:
+ print("\n\n\t\t\tBETTER LUCK NEXT TIME!")
+
+
+
+
+
+
+
+
+
